@@ -8,9 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="DTOs\" />
       <Folder Include="Migrations\" />
-      <Folder Include="Models\" />
     </ItemGroup>
 
     <ItemGroup>

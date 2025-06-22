@@ -28,7 +28,6 @@ builder.Services.AddSwaggerGen(c => {
 
 var app = builder.Build();
 
-
 app.UseSwaggerUI(c => {
     c.SwaggerEndpoint("/swagger/v0/swagger.json", "APBD Kol API");
     c.DocExpansion(DocExpansion.List);
@@ -36,9 +35,6 @@ app.UseSwaggerUI(c => {
     c.DisplayRequestDuration();
     c.EnableFilter();
 });
-
-
-
 
 
 // Configure the HTTP request pipeline.
@@ -49,15 +45,4 @@ app.Run();
 
 
 
-/// migracje db
-/// 1. dotnet ef migrations add <Nazwa Migracji>
-/// 2. dotnet ef database update
-/// 3/ dotnet ef database update <Nazwa poprzedniej migracji>
-/// X.dotnet ef migrations remove
 
-
-/* SELECT*
-    FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_TYPE = 'BASE TABLE'
-ORDER BY TABLE_SCHEMA, TABLE_NAME;
-*/
