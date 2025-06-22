@@ -30,16 +30,4 @@ public class GalleriesController : ControllerBase {
 
     }
     
-    // [HttpPost("washing-machines")]
-    // public async Task<IActionResult> AddWashingMachineWithPrograms([FromBody] NewWMDto dto) {
-    //     try {
-    //         var resultId = await _kolService.AddWashingMachineWithDets(dto);
-    //         return CreatedAtAction(nameof(AddWashingMachineWithPrograms), resultId);
-    //     }
-    //     catch (Exception e) {
-    //         return StatusCode(500, e.Message);
-    //     }
-    // }
-    
-    
 }
